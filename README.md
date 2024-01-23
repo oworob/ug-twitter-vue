@@ -6,6 +6,6 @@ This project is a full stack app that imitates [Twitter](https://www.twitter.com
 
 ### Technologies:
 
-* Frontend - Vue.js
+* Frontend - Vue.js + Sass
 * Backend - NodeJS + Express + Passport.js + Socket.io
 * Database - Neo4j
