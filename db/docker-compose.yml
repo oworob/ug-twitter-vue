@@ -1,0 +1,19 @@
+version: "3.8"
+name: tsw-project
+
+services:
+  db:
+    image: neo4j:latest
+    container_name: tsw-project-neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+      - ./import:/var/lib/neo4j/import
+      - ./plugins:/plugins
+    environment:
+      - NEO4J_AUTH=neo4j/tswproject
+
+      
